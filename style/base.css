@@ -5,12 +5,15 @@ html    {
     overflow: visible;
     
 }
+/*
 ::-webkit-scrollbar { 
     display: none; 
 }
+*/
 body    {
     margin-right: auto;
     margin-left: auto;
+    overflow-x: hidden;
 }
 .margin {
     margin-right: 2rem;

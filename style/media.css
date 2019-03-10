@@ -22,10 +22,13 @@
 }
 img {
     pointer-events: none;
-    z-index: 1; 
     position: absolute;
     transform: translate(-50%,-50%) scale(.35);
 }
+img:hover {
+    z-index: 1; 
+}
+
 
 
 .sticker {

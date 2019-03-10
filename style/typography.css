@@ -1,7 +1,6 @@
 @font-face {
     font-family: 'Recollection';
-    src: url('assets/fonts/Recollection-Display-Regular-Web.woff')
-    format("woff");
+    src: url(/assets/fonts/Recollection-Display-Regular-Web.woff);
     font-weight: 500;
     font-style: normal;
 }
@@ -139,7 +138,7 @@ blockquote  {
     }
     h1  {
     font-size: 60px;
-    font-size: 6.0rem;
+    font-size: 3.6rem;
     letter-spacing: -.015em;
     word-spacing: -0.015em;
     }
@@ -149,8 +148,9 @@ blockquote  {
     line-height: 1.07142857em;
     }
     h2  {
-        font-size: 32px;
-        font-size: 3.2rem;
+        font-size: 30px;
+        font-size: 3.0rem;
+    line-height: 1em;
     }
     h4  {
         font-weight: 500;
@@ -158,8 +158,8 @@ blockquote  {
         font-size: 20.0rem;
     }
     p   {
-    font-size: 22px;
-    font-size: 2.2rem;
+    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 1.13636364em;
     font-weight: 500;
     letter-spacing: -0.003333em;
@@ -177,7 +177,7 @@ blockquote  {
     }
     h1  {
     font-size: 50px;
-    font-size: 5.0rem;
+    font-size: 3.2rem;
     letter-spacing: -.015em;
     word-spacing: -0.015em;
     }
@@ -187,8 +187,9 @@ blockquote  {
     line-height: 1.07142857em;
     }
     h2  {
-        font-size: 32px;
-        font-size: 3.2rem;
+        font-size: 25px;
+    font-size: 2.5rem;
+    line-height: 1em;
     }
     h4  {
         font-weight: 500;
@@ -196,9 +197,8 @@ blockquote  {
         font-size: 20.0rem;
     }
     p   {
-    font-size: 22px;
-    font-size: 2.2rem;
-    line-height: 1.13636364em;
+    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 500;
     letter-spacing: -0.003333em;
     word-spacing: 0.0025em;

@@ -29,11 +29,6 @@ document.addEventListener("click", function (event) {
   placeImage(event.pageX, event.pageY)
 })
 
-document.addEventListener("touchend", function (event) {
-  event.preventDefault()
-  placeImage(event.pageX, event.pageY)
-})
-
 function removeImages() {
   var images = [].slice.call(document.getElementsByTagName('img'), 0); // get the images as array like object, and turn it into an array using slice
 
