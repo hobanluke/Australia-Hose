@@ -1,0 +1,130 @@
+a {
+    text-decoration: none;
+    color: currentColor;
+    cursor: pointer;
+}
+a {
+    opacity: 1;
+    transition: 200ms ease; 
+}
+a:hover   {
+    opacity: .75;
+    transition: 200ms ease;
+}
+
+.link   {
+    cursor: pointer;
+    opacity: 1;
+    transition: 200ms ease; 
+}
+.link:hover   {
+    opacity: .75;
+    transition: 200ms ease;
+}
+h1 a {
+    border-bottom: 4px currentColor solid;
+    padding-bottom: .05em;
+    transition: 200ms ease; 
+}
+a:hover   {
+    opacity: .75;
+    transition: 200ms ease;
+}
+
+.cta    {
+    z-index: 10;
+    top: 1.5rem;
+    right: 1.5rem;
+    
+}
+button  {
+    margin-left: 1rem;
+    height: 6rem;
+    width: 6rem;
+    padding: 0rem 0rem;
+    background: #D6D7D8;
+    border-radius: 6rem;
+    transition: background 200ms ease; 
+    color: inherit;
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+button svg {
+    display: inline-block;
+    width: 2rem;
+    color:  #D6D7D8;
+    height: 2rem;
+    top: 1.5rem;
+    left: 1.5rem;
+    transform: translate(-0%,-0%);
+}
+button:hover  {
+    background: #333333;
+    transition: background 600ms ease;
+    animation: smallBounce 600ms forwards cubic-bezier(.5,.4,.2,.9); 
+}
+button:hover #Menu  {
+    stroke: #D6D7D8;
+    transition:  600ms cubic-bezier(.5,.4,.2,.9); 
+}
+button:hover #Close  {
+    stroke: #D6D7D8;
+    transition:  600ms cubic-bezier(.5,.4,.2,.9); 
+}
+button:hover #Refresh  {
+    fill: #D6D7D8;
+    transition:  600ms cubic-bezier(.5,.4,.2,.9); 
+}
+
+.above-top  {
+     z-index: 10;
+}
+
+@keyframes smallBounce   {
+  0%    {transform: scale(1);}
+  40%   {transform: scale(.8);
+        }
+  100%  {transform: scale(1.05);}
+}
+@media screen and (min-width: 1920px) and (max-width: 10000px) {
+    button h3   {
+    margin-top: 0rem;
+    }
+    .svg-inline h3  {
+    top: -.2rem;
+    }
+}
+@media screen and (min-width: 1600px) and (max-width: 1919px) {
+    button h3   {
+    margin-top: 0rem;
+    }
+    .svg-inline h3  {
+    top: -.2rem;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+    button h3   {
+    margin-top: 0rem;
+    }
+    .svg-inline h3  {
+    top: -.2rem;
+    }
+}
+@media screen and (min-width: 400px) and (max-width: 799px) {
+    
+h1 a {
+    border-bottom: 0px currentColor solid;
+    padding-bottom: .015em;
+    transition: 200ms ease; 
+}
+}
+@media screen and (min-width: 000px) and (max-width: 399px) {
+    
+h1 a {
+    border-bottom: 0px currentColor solid;
+    padding-bottom: .015em;
+    transition: 200ms ease; 
+}
+}

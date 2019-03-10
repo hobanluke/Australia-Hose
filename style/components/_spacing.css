@@ -1,0 +1,78 @@
+.padding-top-15rem   {
+    padding-top: 8rem;
+}
+.padding-top-10rem   {
+    padding-top: 10rem;
+}
+.padding-top-6rem   {
+    padding-top: 7rem;
+}
+.padding-top-7rem   {
+    padding-top: 12.5rem;
+}
+.padding-top-5rem   {
+    padding-top: 10rem;
+}
+.padding-top-2rem    {
+    padding-top: 2rem;
+}
+.padding-top-1-3rem    {
+    padding-top: 1.3rem;
+}
+.padding-top-1rem    {
+    padding-top: 1rem;
+}
+.padding-top-0-3rem    {
+    padding-top: .3rem;
+}
+.padding-top-02rem    {
+    margin-top: -179.5rem;
+}
+.padding-top-01rem    {
+    margin-top: -2.2rem;
+}
+.padding-top-0-5rem    {
+    padding-top: .5rem;
+}
+.margin-bottom-14rem    {
+    margin-bottom: 14rem;
+}
+.margin-bottom-2rem    {
+    margin-bottom: 2rem;
+}
+.margin-bottom-1rem    {
+    margin-bottom: 1rem;
+}
+.margin-bottom-0-5rem    {
+    margin-bottom: .25rem;
+}
+.margin-left-0-5rem    {
+    margin-left: .5rem;
+}
+.margin-left-1rem    {
+    margin-left: 1rem;
+}
+.margin-left-2rem    {
+    left: 32.8vw;
+}
+.margin-right-2rem    {
+    right: 1rem;
+}
+
+@media screen and (min-width: 1920px) and (max-width: 10000px) {
+
+}
+@media screen and (min-width: 1600px) and (max-width: 1919px) {
+
+}
+@media screen and (min-width: 800px) and (max-width: 1300px) 
+{
+    
+}
+@media screen and (min-width: 000px) and (max-width: 799px) {
+    .padding-top-2rem    {
+    padding-top: 1rem;
+    }
+    .margin-right-2rem    {
+    margin-right: 1rem;
+}

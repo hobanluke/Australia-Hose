@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="22px" viewBox="0 0 18 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Refresh</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Refresh" fill="#117958">
+            <path d="M15.999,12.318 L15.999,12.796 C15.999,17.077 13.205,19.925 8.999,19.925 C4.795,19.925 2,17.077 2,12.796 C2,8.513 4.795,5.666 8.999,5.666 L8.999,9.421 L16.781,4.054 L8.999,0 L8.999,3.629 C4.107,3.629 0,7.812 0,12.796 C0,17.779 4.107,21.962 8.999,21.962 C13.894,21.962 18,17.779 18,12.796 L18,12.286 L15.999,12.318 Z" id="refresh"></path>
+        </g>
+    </g>
+</svg>

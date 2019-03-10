@@ -1,0 +1,292 @@
+.pattern    {
+    left: 0;
+    top: 26rem;
+    height: 20rem;
+    position: fixed;
+    z-index: -1;
+    background: #D6D7D8;
+}
+.pattern2    {
+    bottom: 0;
+    height: calc(100vh - 26rem);
+    position: fixed;
+    z-index: -1;
+    background: #D6D7D8;
+}
+.pattern3    {
+    bottom: 0rem;
+    height: calc(100vh - 26rem);
+    position: fixed;
+    z-index: -1;
+    background: #D6D7D8;
+}
+img {
+    pointer-events: none;
+    z-index: 1; 
+    position: absolute;
+    transform: translate(-50%,-50%) scale(.35);
+}
+
+.shadow {
+    content: "";
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background: -moz-linear-gradient(top, rgba(51,51,51,0) 20%, rgba(51,51,51,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(51,51,51,0) 20%,rgba(51,51,51,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(51,51,51,0) 20%,rgba(51,51,51,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00333333', endColorstr='#333333',GradientType=0 ); /* IE6-9 */
+    opacity: 1;
+}
+.sticker {
+    z-index: 5;
+    position: absolute;
+    top: 2rem;
+    left: 47rem;
+    transform: translate(-50%,-50%) scale(.35) rotate(-25deg);
+    animation: bounce 300ms cubic-bezier(.5,.4,.2,.9);  
+}
+.sticker2 {
+    z-index: 4;
+    position: fixed;
+    top: 56rem;
+    left: 69rem;
+    transform: translate(-50%,-50%) scale(.35) rotate(15deg);
+    animation: bounce 500ms cubic-bezier(.5,.4,.2,.9);  
+}
+.sticker3 {
+    z-index: 4;
+    position: fixed;
+    top: 32rem;
+    left: 128rem;
+    transform: translate(-50%,-50%) scale(.35) rotate(15deg);
+    animation: bounce 500ms cubic-bezier(.5,.4,.2,.9);  
+}
+.pointer    {
+    cursor: pointer;
+}
+
+/*
+
+@keyframes bounce   {
+  0%    {transform: translate(-50%,-50%) scale(1) rotate(-0deg);}
+  100%  {transform: translate(-50%,-50%) scale(.3) rotate(-30deg);}
+}
+*/
+
+.credit {
+    bottom: 1.5rem;
+    left: 2.5rem;
+}
+.above  {
+    z-index: 2;
+}
+.fixed  {
+    position: fixed;
+}
+.absolute  {
+    position: absolute;
+}
+.title  {
+    top: -1.6rem;
+}
+.title2 {
+    bottom: 2rem;
+}
+
+
+.section--menu  {
+    z-index: 10;
+}
+
+.menu-default   {
+    display: inline-block;
+    
+    
+}
+.menu-default.open   {
+    display: none;
+    
+}
+
+.menu-close {
+    display: none;
+}
+.menu-close.open {
+    display: inline-block;
+}
+.program.open   {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%);
+    transition: 500ms 400ms cubic-bezier(.5,.4,.2,.9); 
+}
+
+.program    {
+    background: #117958;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    position: fixed;
+    overflow: scroll;
+    visibility: hidden;
+    transform: translateY(100vh);
+    transition:  400ms cubic-bezier(.5,.4,.2,.9);
+    
+}
+.program-container  {
+    opacity: 0;
+    transition: 400ms ease;
+}
+.program-container.open  {
+    opacity: 1;
+    transition: 1000ms ease;
+}
+
+.title-hide {
+    opacity: 1;
+    transition: 1000ms ease;
+    
+}
+
+.title-hide.open {
+    opacity: 0;
+    transition: 500ms ease;
+    
+}
+.list   {
+    opacity: 1;
+    transition: 1000ms ease;
+}
+.list.open   {
+    opacity: 0;
+    transition: 500ms ease;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+    top: 1rem;
+}
+
+.sticky-bottom {
+  position: -webkit-sticky;
+  position: sticky;
+    top: 6rem;
+}
+
+.scroll-contain {
+     
+  overflow: auto;
+  display: flex;
+}
+
+
+/*
+.program-container  {
+    overflow: scroll;
+    height: 100%;
+}
+
+*/
+
+    .mobile-appear  {
+        display: none;
+    }
+
+
+.image-16x9  {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    display: block;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image-3x2  {
+    position: relative;
+    width: 100%;
+    padding-top: 66%;
+    display: block;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image-2x3  {
+    position: relative;
+    width: 100%;
+    padding-top: 150%;
+    display: block;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer-box {
+    height: 100vh;
+    max-height: 1000px;
+}
+.image-height  {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    display: block;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image-1x1  {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    display: block;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.expand-image div  {
+    opacity: 1;
+    cursor: zoom-in;
+    transition: opacity 100ms ease;  
+}
+.expand-image button  {
+    position: absolute;
+    right: 0rem;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 100ms ease;  
+}
+.expand-image:hover div  {
+    opacity: .95;
+    transition: opacity 300ms 300ms ease;  
+}
+.expand-image:hover button  {
+    opacity: 1;
+    transition: opacity 600ms 300ms ease;  
+}
+
+@media screen and (min-width: 1920px) and (max-width: 10000px) {
+
+}
+@media screen and (min-width: 1600px) and (max-width: 1919px) {
+
+}
+@media screen and (min-width: 000px) and (max-width: 799px) {
+.expand-image button  {
+    right: 0rem;
+}
+    .mobile-appear  {
+        display: block;
+    }
+    .mobile-hide    {
+        display: none;
+    }
+.mobile-hidden {
+    display: none;
+}
+}
