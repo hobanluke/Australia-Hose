@@ -137,8 +137,9 @@ blockquote  {
     font-size: 50%;
     }
     h1  {
-    font-size: 60px;
-    font-size: 3.6rem;
+    font-size: 35px;
+    font-size: 3.5rem;
+    line-height: 1em;
     letter-spacing: -.015em;
     word-spacing: -0.015em;
     }
