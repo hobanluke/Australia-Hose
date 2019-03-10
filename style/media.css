@@ -124,14 +124,18 @@ img:hover {
     height: 100vh;
     opacity: 1;
     position: fixed;
-    overflow: scroll;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     visibility: hidden;
     transform: translateY(100vh);
     transition:  400ms cubic-bezier(.5,.4,.2,.9);
     
 }
 .program-container  {
-    opacity: 0;
+    opacity: 0;  
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;  
     transition: 800ms ease;
 }
 .program-container.open  {
