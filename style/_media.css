@@ -27,19 +27,7 @@ img {
     transform: translate(-50%,-50%) scale(.35);
 }
 
-.shadow {
-    content: "";
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 150px;
-    background: -moz-linear-gradient(top, rgba(51,51,51,0) 20%, rgba(51,51,51,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(51,51,51,0) 20%,rgba(51,51,51,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(51,51,51,0) 20%,rgba(51,51,51,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00333333', endColorstr='#333333',GradientType=0 ); /* IE6-9 */
-    opacity: 1;
-}
+
 .sticker {
     z-index: 5;
     position: absolute;
@@ -120,8 +108,8 @@ img {
 .program.open   {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0%);
-    transition: 500ms 400ms cubic-bezier(.5,.4,.2,.9); 
+    transform: translateY(0);
+    transition: 500ms 200ms cubic-bezier(.5,.4,.2,.9); 
 }
 
 .program    {
@@ -141,11 +129,11 @@ img {
 }
 .program-container  {
     opacity: 0;
-    transition: 400ms ease;
+    transition: 800ms ease;
 }
 .program-container.open  {
     opacity: 1;
-    transition: 1000ms ease;
+    transition: 300ms ease;
 }
 
 .title-hide {
@@ -168,6 +156,26 @@ img {
     transition: 500ms ease;
 }
 
+.shadow {
+    content: "";
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background: -moz-linear-gradient(top, rgba(51,51,51,0) 20%, rgba(51,51,51,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(51,51,51,0) 20%,rgba(51,51,51,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(51,51,51,0) 20%,rgba(51,51,51,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00333333', endColorstr='#333333',GradientType=0 ); /* IE6-9 */
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 400ms cubic-bezier(.5,.4,.2,.9);
+}
+
+.shadow.open {
+    transition: transform 500ms 200ms cubic-bezier(.5,.4,.2,.9);
+    transform: translateY(-100vh);
+}
 .sticky {
   position: -webkit-sticky;
   position: sticky;

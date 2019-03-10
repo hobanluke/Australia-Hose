@@ -42,10 +42,10 @@ em  {
     font-style: italic;
 }
 .rule-above  {
-    top: -1px;
+    top: -2px;
     position: absolute;
-    margin-top: -1px;
-    border-top: 1px solid #D6D7D8;
+    margin-top: -2px;
+    border-top: 2px solid #D6D7D8;
 }
 .tabular-numbers {
     font-variant-numeric: tabular-nums;

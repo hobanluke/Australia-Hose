@@ -62,20 +62,20 @@ button svg {
 }
 button:hover  {
     background: #333333;
-    transition: background 600ms ease;
-    animation: smallBounce 600ms forwards cubic-bezier(.5,.4,.2,.9); 
+    transition: background 400ms ease;
+    animation: smallBounce 400ms forwards cubic-bezier(.5,.4,.2,.9); 
 }
 button:hover #Menu  {
     stroke: #D6D7D8;
-    transition:  600ms cubic-bezier(.5,.4,.2,.9); 
+    transition:  400ms cubic-bezier(.5,.4,.2,.9); 
 }
 button:hover #Close  {
     stroke: #D6D7D8;
-    transition:  600ms cubic-bezier(.5,.4,.2,.9); 
+    transition:  400ms cubic-bezier(.5,.4,.2,.9); 
 }
 button:hover #Refresh  {
     fill: #D6D7D8;
-    transition:  600ms cubic-bezier(.5,.4,.2,.9); 
+    transition:  400ms cubic-bezier(.5,.4,.2,.9); 
 }
 
 .above-top  {
@@ -84,7 +84,7 @@ button:hover #Refresh  {
 
 @keyframes smallBounce   {
   0%    {transform: scale(1);}
-  40%   {transform: scale(.8);
+  40%   {transform: scale(.9);
         }
   100%  {transform: scale(1.05);}
 }
