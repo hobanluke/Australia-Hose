@@ -3,14 +3,6 @@ a {
     color: currentColor;
     cursor: pointer;
 }
-a {
-    opacity: 1;
-    transition: 200ms ease; 
-}
-a:hover   {
-    opacity: .75;
-    transition: 200ms ease;
-}
 
 .link   {
     cursor: pointer;
@@ -21,15 +13,6 @@ a:hover   {
     opacity: .75;
     transition: 200ms ease;
 }
-h1 a {
-    border-bottom: 4px currentColor solid;
-    padding-bottom: .05em;
-    transition: 200ms ease; 
-}
-a:hover   {
-    opacity: .75;
-    transition: 200ms ease;
-}
 
 .cta    {
     z-index: 10;
@@ -37,6 +20,7 @@ a:hover   {
     right: 1.5rem;
     
 }
+
 button  {
     margin-left: 1rem;
     height: 6rem;

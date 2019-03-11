@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Recollection';
-    src: url('/assets/fonts/Recollection-Display-Regular-Web.woff');
+    src: url('/assets/fonts/Recollection-Display-Regular.woff');
     font-weight: 500;
     font-style: normal;
 }
@@ -60,9 +60,9 @@ h1  {
     font-weight: 500;
     font-size: 110px;
     font-size: 11.0rem;
-    font-size: 7.55vw;
+    font-size: 7.6vw;
     line-height: 1em;
-    letter-spacing: -.025em;
+    letter-spacing: -.0125em;
     word-spacing: -0.03em;
 }
 h2  {
@@ -71,7 +71,7 @@ h2  {
     font-size: 3.2rem;
     line-height: 1.09375em;
     font-weight: 500;
-    letter-spacing: -0.015em;
+    letter-spacing: -0.01em;
     word-spacing: -0.02em;
 }
 h3  {
@@ -177,8 +177,9 @@ blockquote  {
     font-size: 50%;
     }
     h1  {
-    font-size: 50px;
-    font-size: 3.2rem;
+    font-size: 30px;
+    font-size: 3.1rem;
+    line-height: 1em;
     letter-spacing: -.015em;
     word-spacing: -0.015em;
     }

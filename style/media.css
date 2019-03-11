@@ -1,3 +1,32 @@
+
+.a-fade {
+    transition:  300ms ease;
+    opacity: 1;
+}
+html.is-animating .a-fade {
+    transition:  300ms ease;
+    
+    opacity: 0;
+}
+html.is-changing .a-fade {
+    transition:  300ms ease;
+    
+    opacity: 0;
+}
+
+html.is-leaving .a-fade {
+    transition:  300ms ease;
+    
+    opacity: 0;
+}
+
+html.is-rendering .a-fade {
+    transition:  300ms ease;
+    
+    opacity: 1;
+}
+                
+
 .pattern    {
     left: 0;
     top: 26rem;
@@ -20,7 +49,7 @@
     z-index: -1;
     background: #D6D7D8;
 }
-img {
+body img {
     pointer-events: none;
     position: absolute;
     transform: translate(-50%,-50%) scale(.35);
@@ -97,50 +126,19 @@ img:hover {
     
     
 }
-.menu-default.open   {
-    display: none;
-    
-}
 
 .menu-close {
-    display: none;
-}
-.menu-close.open {
     display: inline-block;
-}
-.program.open   {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-    transition: 500ms 200ms cubic-bezier(.5,.4,.2,.9); 
 }
 
 .program    {
     background: #117958;
-    z-index: 9;
     left: 0;
     top: 0;
     width: 100%;
-    height: 100vh;
-    opacity: 1;
-    position: fixed;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-    visibility: hidden;
-    transform: translateY(100vh);
     transition:  400ms cubic-bezier(.5,.4,.2,.9);
+    animation: slideIn 700ms  cubic-bezier(.5,.4,.2,.9);  
     
-}
-.program-container  {
-    opacity: 0;  
-    height: 100%;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;  
-    transition: 800ms ease;
-}
-.program-container.open  {
-    opacity: 1;
-    transition: 300ms ease;
 }
 
 .title-hide {
@@ -157,6 +155,7 @@ img:hover {
 .list   {
     opacity: 1;
     transition: 1000ms ease;
+    animation: slideIn 700ms  cubic-bezier(.5,.4,.2,.9); 
 }
 .list.open   {
     opacity: 0;
@@ -175,13 +174,17 @@ img:hover {
     background: linear-gradient(to bottom, rgba(51,51,51,0) 20%,rgba(51,51,51,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00333333', endColorstr='#333333',GradientType=0 ); /* IE6-9 */
     opacity: 1;
+/*
     transform: translateY(0);
     transition: transform 400ms cubic-bezier(.5,.4,.2,.9);
+*/
 }
 
 .shadow.open {
+/*
     transition: transform 500ms 200ms cubic-bezier(.5,.4,.2,.9);
     transform: translateY(-100vh);
+*/
 }
 .sticky {
   position: -webkit-sticky;
@@ -246,9 +249,11 @@ img:hover {
     height: 100vh;
     max-height: 1000px;
 }
-.image-height  {
-    bottom: 0;
+.fixed-bottom   {
     position: absolute;
+    bottom: 0;
+}
+.image-height  {
     width: 100%;
     display: block;
     background-position: top;
@@ -303,5 +308,29 @@ img:hover {
     }
 .mobile-hidden {
     display: none;
+}
+    
+.program.open   {
+    transition: 800ms 200ms cubic-bezier(.5,.4,.2,.9); 
+}
+
+.program    {
+    transition:  600ms cubic-bezier(.5,.4,.2,.9);
+    
+}
+.title-hide {
+    transition: 1200ms ease;
+    
+}
+
+.title-hide.open {
+    transition: 600ms ease;
+    
+}
+.list   {
+    transition: 1200ms ease;
+}
+.list.open   {
+    transition: 600ms ease;
 }
 }

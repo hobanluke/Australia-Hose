@@ -20,9 +20,11 @@ body    {
     margin-left: 2rem;
 }
 @media screen and (min-width: 1920px) and (max-width: 10000px) {
+/*
     body    {
     width: 1920px;
 }
+*/
     .margin    {
     width: calc(1920px - 4rem);
     }

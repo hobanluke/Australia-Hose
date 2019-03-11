@@ -298,7 +298,9 @@ html {
         padding-right: 0rem;
         padding-left: 0rem;
     }
-    
+    .padding    {
+    padding: 1rem 1rem;
+}
     .col-s {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
