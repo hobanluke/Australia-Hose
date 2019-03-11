@@ -130,14 +130,17 @@ img:hover {
 .menu-close {
     display: inline-block;
 }
+@keyframes slideIn   {
+  0%    {opacity: 0;}
+  100%  {opacity: 1;}
+}
 
 .program    {
     background: #117958;
     left: 0;
     top: 0;
     width: 100%;
-    transition:  400ms cubic-bezier(.5,.4,.2,.9);
-    animation: slideIn 700ms  cubic-bezier(.5,.4,.2,.9);  
+    animation: forwards slideIn 400ms ease;  
     
 }
 
@@ -155,7 +158,7 @@ img:hover {
 .list   {
     opacity: 1;
     transition: 1000ms ease;
-    animation: slideIn 700ms  cubic-bezier(.5,.4,.2,.9); 
+    animation: forwards slideIn 800ms  ease; 
 }
 .list.open   {
     opacity: 0;
