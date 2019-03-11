@@ -46,6 +46,13 @@ em  {
     margin-top: -2px;
     border-top: 2px solid #D6D7D8;
 }
+.rule-above2  {
+    top: 0px;
+    padding-bottom: 0rem;
+    position: absolute;
+    margin-top: -2px;
+    border-top: 2px solid #D6D7D8;
+}
 .tabular-numbers {
     font-variant-numeric: tabular-nums;
     letter-spacing: -0.025em;
@@ -171,6 +178,10 @@ blockquote  {
     margin-top: 1.6rem;
     margin-bottom: 1.9rem;
     }
+.rule-above2  {
+    padding-bottom: 1rem;
+    margin-top: -2px;
+}
 }
 @media screen and (min-width: 000px) and (max-width: 399px) {
     html    {
@@ -214,5 +225,9 @@ h1 a {
     border-bottom: 0px currentColor solid;
     padding-bottom: .015em;
     transition: 200ms ease; 
+}
+.rule-above2  {
+    padding-bottom: 1rem;
+    margin-top: -2px;
 }
 }

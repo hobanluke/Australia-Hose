@@ -189,10 +189,20 @@ img:hover {
     transform: translateY(-100vh);
 */
 }
+
+dates.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
 .sticky {
   position: -webkit-sticky;
   position: sticky;
-    top: 1rem;
+    top: 0rem;
+    background: #117958;
+    z-index: 2;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid;
 }
 
 .sticky-bottom {
@@ -313,27 +323,14 @@ img:hover {
     display: none;
 }
     
-.program.open   {
-    transition: 800ms 200ms cubic-bezier(.5,.4,.2,.9); 
-}
-
-.program    {
-    transition:  600ms cubic-bezier(.5,.4,.2,.9);
-    
-}
-.title-hide {
-    transition: 1200ms ease;
-    
-}
-
-.title-hide.open {
-    transition: 600ms ease;
-    
-}
-.list   {
-    transition: 1200ms ease;
-}
-.list.open   {
-    transition: 600ms ease;
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+    top: -2px;
+    padding-top: 1rem;
+    background: #117958;
+    z-index: 2;
+    padding-bottom: 6rem;
+    border-bottom: 2px solid;
 }
 }
