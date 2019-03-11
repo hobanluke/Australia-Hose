@@ -303,6 +303,9 @@ dates.sticky {
     transition: opacity 600ms 300ms ease;  
 }
 
+        .mobile-appear2  {
+        display: none;
+    }
 @media screen and (min-width: 1920px) and (max-width: 10000px) {
 
 }
@@ -315,6 +318,9 @@ dates.sticky {
 }
     .mobile-appear  {
         display: block;
+    }
+        .mobile-appear2  {
+        display: inline-block;
     }
     .mobile-hide    {
         display: none;
