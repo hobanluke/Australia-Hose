@@ -48,7 +48,79 @@
 
   gtag('config', 'UA-136025582-1');
 </script>
-      <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/ce030676f44d3664a11e22f97/4ac7fd34ca9d0562056c6d73f.js");</script> 
+      <script id="mcjs">/* eslint-disable */
+(function () {
+    /* eslint-disable */
+    if (!window.$mcSite) {
+        $mcSite = {
+            optinFeatures: [],
+            enableOptIn: function () {
+                this.createCookie("mc_user_optin", true, 365);
+                this.optinFeatures.forEach(function (fn) {
+                    fn();
+                });
+            },
+
+            runIfOptedIn: function (fn) {
+                if (this.hasOptedIn()) {
+                    fn();
+                } else {
+                    this.optinFeatures.push(fn);
+                }
+            },
+
+            hasOptedIn: function () {
+                var cookieValue = this.readCookie("mc_user_optin");
+
+                if (cookieValue === undefined) {
+                    return true;
+                }
+
+                return cookieValue === "true";
+            },
+
+            createCookie: function (name, value, expirationDays) {
+                var cookie_value = encodeURIComponent(value) + ";";
+                
+                if (expirationDays === undefined) {
+                    throw new Error("expirationDays is not defined");
+                }
+
+                // set expiration
+                if (expirationDays !== null) {
+                    var expirationDate = new Date();
+                    expirationDate.setDate(expirationDate.getDate() + expirationDays);
+                    cookie_value += " expires=" + expirationDate.toUTCString() + ";";
+                }
+    
+                cookie_value += "path=/";
+                document.cookie = name + "=" + cookie_value;
+            },
+
+            readCookie: function (name) {
+                var nameEQ = name + "=";
+                var ca = document.cookie.split(";");
+    
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+    
+                    while (c.charAt(0) === " ") {
+                        c = c.substring(1, c.length);
+                    }
+    
+                    if (c.indexOf(nameEQ) === 0) {
+                        return c.substring(nameEQ.length, c.length);
+                    }
+                }
+    
+                return undefined;
+            }
+        };
+    }
+
+    
+})();
+</script> 
 </head>
         
 <body class="">
